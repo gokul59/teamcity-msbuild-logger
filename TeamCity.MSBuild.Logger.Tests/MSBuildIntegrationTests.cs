@@ -96,7 +96,7 @@ namespace TeamCity.MSBuild.Logger.Tests
             restoreCommandLine.TryExecute(out var restoreResult).ShouldBe(true);
             buildWithLoggerCommandLine.TryExecute(out var buildWithLoggerResult).ShouldBe(true);
 
-            // Then
+            // Then end
             restoreWithLoggerResult.ResultShouldBe(restoreResult, producesTeamCityServiceMessages);
             buildWithLoggerResult.ResultShouldBe(buildResult);
         }
